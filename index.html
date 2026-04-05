@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTBurim Gallery</title>
+</head>
+<body class="bg-gray-50">
+
+<nav class="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-[100] shadow-sm">
+    <div class="flex justify-between items-center mx-auto max-w-7xl">
+        <a href="index.html" class="flex items-center group">
+            <span class="text-2xl font-black tracking-tighter text-gray-900 group-hover:text-blue-600 transition-colors">
+                ART<span class="text-blue-600 group-hover:text-gray-900 transition-colors">Burim</span>
+            </span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-10 font-medium text-sm uppercase tracking-widest text-gray-500">
+            <a href="index.html" class="hover:text-blue-600 transition-colors">Gallery</a>
+            <a href="About.html" class="hover:text-blue-600 transition-colors">About</a>
+            <a href="Exhibitions.html" class="hover:text-blue-600 transition-colors">Exhibitions</a>
+        </div>
+
+        <div class="flex items-center space-x-2 md:space-x-5">
+            <a href="cart.html" class="relative p-2 hover:bg-gray-50 rounded-full transition-colors group">
+                <img src="src/assets/svgs/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="cart" class="w-6 h-6 opacity-70 group-hover:opacity-100">
+                <span id="nav-cart-count" class="absolute top-1 right-1 bg-blue-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+                    0
+                </span>
+            </a>
+            
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors focus:outline-none">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-2xl overflow-hidden transition-all duration-300 ease-in-out">
+        <div class="flex flex-col p-8 space-y-6 text-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">Gallery</a>
+            <a href="About.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">About</a>
+            <a href="Exhibitions.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">Exhibitions</a>
+            <div class="pt-4 border-t border-gray-50">
+                <p class="text-xs text-gray-400 uppercase tracking-widest">Mastery in Oil & Canvas</p>
+            </div>
+        </div>
+    </div>
+</nav>
+    <header class="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-gray-900">
+        <img src="src/assets/paintings/The Resting Skiff.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+        <div class="relative h-full max-w-7xl mx-auto px-6 flex flex-col justify-end pb-16 md:pb-24">
+            <span class="text-blue-400 uppercase tracking-[0.3em] text-xs mb-3 font-bold">New Release</span>
+            <h1 class="text-4xl md:text-7xl font-serif text-white leading-tight max-w-2xl">
+                The Resting <span class="italic text-gray-300">Skiff</span>
+            </h1>
+            <p class="mt-4 text-base md:text-lg text-gray-300 max-w-md font-light leading-relaxed">
+                A visceral exploration of movement and stillness in the shoreline study.
+            </p>
+            <div class="mt-8">
+                <a href="#selpic" class="inline-block bg-white text-black px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all">Explore Collection</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="selpic" class="py-16 px-6 lg:px-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-16 items-start">
+                <div class="w-full lg:sticky lg:top-32 mb-8 lg:mb-0">
+                    <div class="overflow-hidden rounded-sm bg-white shadow-xl border-[8px] md:border-[16px] border-white ring-1 ring-gray-200">
+                        <img src="src/assets/paintings/The Resting Skiff.jpg" alt="The Resting Skiff" class="w-full h-auto object-cover transition-transform duration-700 hover:scale-105">
+                        <div class="absolute bottom-4 right-4 bg-white/80 p-2 rounded-full backdrop-blur-sm">
+                        <a href="src/assets/paintings/The Resting Skiff.jpg" target="_blank">
+                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="w-full">
+                    <nav class="flex mb-4 text-[10px] uppercase tracking-widest text-gray-400 font-bold">
+                        <span>Landscape Collection</span>
+                        <span class="mx-2">/</span>
+                        <span class="text-blue-600">Originals</span>
+                    </nav>
+                    <h2 class="text-3xl md:text-5xl font-serif text-gray-900">The Resting Skiff</h2>
+                    <p class="text-2xl font-light text-red-600 mt-2 font-mono">&euro;1,899.99</p>
+                    
+                    <div class="mt-8 space-y-6">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2">The Work</h3>
+                            <p class="mt-4 text-base text-gray-600 italic leading-relaxed">A vibrant exploration of color and texture, capturing a solitary wooden boat moored along a lush shoreline.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 pt-4 text-sm">
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Medium</span>
+                                <span class="text-gray-900 font-medium">Oil on Canvas</span>
+                            </div>
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Dimensions</span>
+                                <span class="text-gray-900 font-medium">24" x 24"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <button class="add-to-cart w-full bg-black text-white py-5 text-sm font-bold uppercase tracking-[0.2em] hover:bg-blue-600 transition-all active:scale-95 shadow-lg" 
+                                data-id="1" data-name="The Resting Skiff" data-price="1899.99">
+                            Acquire Original
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="selpic" class="py-16 px-6 lg:px-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-16 items-start">
+                <div class="w-full lg:sticky lg:top-32 mb-8 lg:mb-0">
+                    <div class="overflow-hidden rounded-sm bg-white shadow-xl border-[8px] md:border-[16px] border-white ring-1 ring-gray-200">
+                        <img src="src/assets/paintings/Violet Hour.jpg" alt="The Resting Skiff" class="w-full h-auto object-cover transition-transform duration-700 hover:scale-105">
+                         <div class="absolute bottom-4 right-4 bg-white/80 p-2 rounded-full backdrop-blur-sm">
+                        <a href="src/assets/paintings/Violet Hour.jpg" target="_blank">
+                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="w-full">
+                    <nav class="flex mb-4 text-[10px] uppercase tracking-widest text-gray-400 font-bold">
+                        <span>Landscape Collection</span>
+                        <span class="mx-2">/</span>
+                        <span class="text-blue-600">Originals</span>
+                    </nav>
+                    <h2 class="text-3xl md:text-5xl font-serif text-gray-900">Violet Hour</h2>
+                    <p class="text-2xl font-light text-red-600 mt-2 font-mono">&euro;1,499.99</p>
+                    
+                    <div class="mt-8 space-y-6">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2">The Work</h3>
+                            <p class="mt-4 text-base text-gray-600 italic leading-relaxed">A masterful display of atmospheric abstraction, Violet Hour captures the fleeting transition of twilight. Defined by a celestial collision of deep lavenders and soft magentas, the piece is anchored by a radiant horizontal core of amber and fiery orange.
+
+Heavy impasto strokes and layered glazing evoke a sense of constant motion, inviting the viewer into a moment of quiet, sublime intensity.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 pt-4 text-sm">
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Medium</span>
+                                <span class="text-gray-900 font-medium">Oil on Canvas</span>
+                            </div>
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Dimensions</span>
+                                <span class="text-gray-900 font-medium">24" x 24"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <button class="add-to-cart w-full bg-black text-white py-5 text-sm font-bold uppercase tracking-[0.2em] hover:bg-blue-600 transition-all active:scale-95 shadow-lg" 
+                                data-id="1" data-name="The Resting Skiff" data-price="1899.99">
+                            Acquire Original
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <section id="selpic" class="py-16 px-6 lg:px-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-16 items-start">
+                <div class="w-full lg:sticky lg:top-32 mb-8 lg:mb-0">
+                    <div class="overflow-hidden rounded-sm bg-white shadow-xl border-[8px] md:border-[16px] border-white ring-1 ring-gray-200">
+                        <img src="src/assets/paintings/Midnight Tides.jpg" alt="The Resting Skiff" class="w-full h-auto object-cover transition-transform duration-700 hover:scale-105">
+                          <div class="absolute bottom-4 right-4 bg-white/80 p-2 rounded-full backdrop-blur-sm">
+                        <a href="src/assets/paintings/Midnight Tides.jpg" target="_blank">
+                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="w-full">
+                    <nav class="flex mb-4 text-[10px] uppercase tracking-widest text-gray-400 font-bold">
+                        <span>Landscape Collection</span>
+                        <span class="mx-2">/</span>
+                        <span class="text-blue-600">Originals</span>
+                    </nav>
+                    <h2 class="text-3xl md:text-5xl font-serif text-gray-900">Midnight Tidea</h2>
+                    <p class="text-2xl font-light text-red-600 mt-2 font-mono">&euro;1,099.99</p>
+                    
+                    <div class="mt-8 space-y-6">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2">The Work</h3>
+                            <p class="mt-4 text-base text-gray-600 italic leading-relaxed">A contemplative study of light and shadow, using deep indigos and rich violets to evoke a quiet coastline at dusk. Thick, visible brushstrokes capture the reflection of moonlight off a calm, receding sea.
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Medium</span>
+                                <span class="text-gray-900 font-medium">Oil on Canvas</span>
+                            </div>
+                            <div>
+                                <span class="block text-gray-400 uppercase text-[10px] font-bold">Dimensions</span>
+                                <span class="text-gray-900 font-medium">24" x 24"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <button class="add-to-cart w-full bg-black text-white py-5 text-sm font-bold uppercase tracking-[0.2em] hover:bg-blue-600 transition-all active:scale-95 shadow-lg" 
+                                data-id="1" data-name="The Resting Skiff" data-price="1899.99">
+                            Acquire Original
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <span class="text-2xl font-bold text-blue-600 tracking-tighter">ARTBurim</span>
+                <p class="mt-4 text-gray-400 text-sm max-w-xs mx-auto md:mx-0">Bringing 25 years of artistic mastery to your private collection.</p>
+            </div>
+            
+            <div class="flex flex-col space-y-3 font-medium text-gray-700">
+                <a href="index.html" class="hover:text-blue-600">Gallery</a>
+                <a href="About.html" class="hover:text-blue-600">About</a>
+                <a href="Exhibitions.html" class="hover:text-blue-600">Exhibitions</a>
+            </div>
+
+            <div class="flex flex-col space-y-3 text-sm text-gray-400">
+                <a href="datenchutz.html" class="hover:text-gray-900">Datenschutz</a>
+                <a href="impressum.html" class="hover:text-gray-900">Impressum</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-50 text-center text-[10px] text-gray-400 uppercase tracking-widest">
+            &copy; 2026 ARTBurim. Handcrafted by Burim.
+        </div>
+    </footer>
+    <div id="app"></div>
+ <script type="module" src="/src/main.js">
+    const menuBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Simple icon toggle (Hamburger to X)
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+ </script>
+</body>
+</html>

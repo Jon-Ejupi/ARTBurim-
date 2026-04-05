@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About the Artist - ARTBurim</title>
+    </head>
+    <body class="bg-gray-50">
+<nav class="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-[100] shadow-sm">
+    <div class="flex justify-between items-center mx-auto max-w-7xl">
+        <a href="index.html" class="flex items-center group">
+            <span class="text-2xl font-black tracking-tighter text-gray-900 group-hover:text-blue-600 transition-colors">
+                ART<span class="text-blue-600 group-hover:text-gray-900 transition-colors">Burim</span>
+            </span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-10 font-medium text-sm uppercase tracking-widest text-gray-500">
+            <a href="index.html" class="hover:text-blue-600 transition-colors">Gallery</a>
+            <a href="About.html" class="hover:text-blue-600 transition-colors">About</a>
+            <a href="Exhibitions.html" class="hover:text-blue-600 transition-colors">Exhibitions</a>
+        </div>
+
+        <div class="flex items-center space-x-2 md:space-x-5">
+            <a href="cart.html" class="relative p-2 hover:bg-gray-50 rounded-full transition-colors group">
+                <img src="src/assets/svgs/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="cart" class="w-6 h-6 opacity-70 group-hover:opacity-100">
+                <span id="nav-cart-count" class="absolute top-1 right-1 bg-blue-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+                    0
+                </span>
+            </a>
+            
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors focus:outline-none">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-2xl overflow-hidden transition-all duration-300 ease-in-out">
+        <div class="flex flex-col p-8 space-y-6 text-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">Gallery</a>
+            <a href="About.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">About</a>
+            <a href="Exhibitions.html" class="text-xl font-bold text-gray-900 hover:text-blue-600">Exhibitions</a>
+            <div class="pt-4 border-t border-gray-50">
+                <p class="text-xs text-gray-400 uppercase tracking-widest">Mastery in Oil & Canvas</p>
+            </div>
+        </div>
+    </div>
+</nav>  
+    <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-gray-900">
+        <img src="src/assets/paintings/Artist-img.jpg" alt="The Resting Skiff Hero" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+        <div class="relative h-full max-w-7xl mx-auto px-6 flex flex-col justify-center items-start">
+            <span class="text-white/80 uppercase tracking-[0.3em] text-xs mb-4">Exhibition in Berlin</span>
+            <h1 class="text-5xl md:text-7xl font-serif text-white leading-tight max-w-2xl">
+               Between Stone and <span class="italic">Sky</span>
+            </h1>
+            
+          
+        </div>
+    </header>
+    <br>
+        <section class="bg-white py-16 px-6 md:px-12 lg:px-24 font-sans text-gray-800">
+  <div class="max-w-5xl mx-auto">
+    <div class="border-b border-gray-200 pb-8 mb-12">
+      <h2 class="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">The Artist</h2>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+        Burim Ajdini
+      </h1>
+      <p class="mt-4 text-xl text-gray-600 italic">
+        A legacy of color, form, and twenty-five years of technical mastery.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">Education</h3>
+          <p class="text-gray-600">Master of Fine Arts (MFA)</p>
+          <p class="text-sm text-gray-500 italic">Advanced Research in Contemporary Painting</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">Exhibition Highlights</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Paris
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Berlin
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> New York City
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Istanbul
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+          <p class="text-3xl font-black text-blue-600 mb-1">25+</p>
+          <p class="text-sm font-bold uppercase tracking-wide text-gray-500">Years of Mastery</p>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 space-y-6 text-lg leading-relaxed text-gray-700">
+        <p>
+          Burim Ajdini is a distinguished contemporary painter whose work serves as a profound dialogue between traditional rigor and modern emotional depth. With over <span class="font-semibold text-gray-900">twenty-five years of professional practice</span>, his evolution as an artist is marked by an unwavering commitment to the craft and a deep-seated curiosity about the human experience.
+        </p>
+
+        <p>
+          Ajdini’s artistic foundation is built upon a high-level academic pedigree, holding a <span class="font-semibold text-gray-900">Master’s Degree</span> that allowed him to synthesize classical techniques with a unique, atmospheric style. His canvases often explore the delicate balance of light and shadow, using layered textures to create a sense of timelessness that resonates with viewers globally.
+        </p>
+
+        <p>
+          His career is defined by a truly international footprint. From the historic galleries of <span class="font-semibold text-gray-900">Paris and Berlin</span> to the vibrant art scenes of <span class="font-semibold text-gray-900">New York City and Istanbul</span>, Ajdini’s exhibitions have invited audiences into a world where color becomes a language and form becomes a feeling. 
+        </p>
+
+        <p>
+          Whether working in expansive abstraction or nuanced figurative studies, Ajdini remains dedicated to the pursuit of technical excellence. Today, his works are held in numerous private and public collections, standing as a testament to a quarter-century of creative discipline and a legacy that continues to inspire.
+        </p>
+        
+        <div class="pt-6">
+          <a href="mailto:burimajdini.ba@gmail.com" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors shadow-sm">
+            Request Acquisition Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="bg-white border-t border-gray-200 pt-12 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <span class="text-2xl font-bold text-blue-600 tracking-tighter">ARTBurim</span>
+                <p class="mt-4 text-gray-400 text-sm max-w-xs mx-auto md:mx-0">Bringing 25 years of artistic mastery to your private collection.</p>
+            </div>
+            
+            <div class="flex flex-col space-y-3 font-medium text-gray-700">
+                <a href="index.html" class="hover:text-blue-600">Gallery</a>
+                <a href="About.html" class="hover:text-blue-600">About</a>
+                <a href="Exhibitions.html" class="hover:text-blue-600">Exhibitions</a>
+            </div>
+
+            <div class="flex flex-col space-y-3 text-sm text-gray-400">
+                <a href="datenchutz.html" class="hover:text-gray-900">Datenschutz</a>
+                <a href="impressum.html" class="hover:text-gray-900">Impressum</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-50 text-center text-[10px] text-gray-400 uppercase tracking-widest">
+            &copy; 2026 ARTBurim. Handcrafted by Burim.
+        </div>
+    </footer>
+    <script type="module" src="src/about.js"></script>
+    <script type="module" src="src/main.js"></script>
+    </body>
+</html>
