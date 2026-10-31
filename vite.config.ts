@@ -12,7 +12,7 @@ export default defineConfig({
         about: 'about.html',
         exhibitions: 'exhibitions.html',
         cart: 'cart.html',
-        datenschutz: 'datenchutz.html',
+        datenschutz: 'datenschutz.html',
         impressum: 'impressum.html',
       },
     },
