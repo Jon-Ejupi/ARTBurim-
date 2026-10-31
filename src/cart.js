@@ -1,6 +1,5 @@
 import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import heroImg from './assets/hero.png'
+
 import { setupCounter } from './counter.js'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -61,4 +60,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }).render("#paypal-button-container")
     }
+
 }); 
