@@ -14,9 +14,9 @@ export default defineConfig({
         cart: 'cart.html',
         datenschutz: 'datenschutz.html',
         impressum: 'impressum.html',
-        violet: '/assets/paintings/Violet Hour.jpg',
-        resting: '/assets/paintings/The Resting Skiff.jpg',
-        midnight: '/assets/paintings/Midnight Tides.jpg'
+        violet: "/assets/paintings/'Violet Hour.jpg'",
+        resting: "/assets/paintings/'The Resting Skiff.jpg'",
+        midnight: "/assets/paintings/'Midnight Tides.jpg'"
       },
     },
   },
