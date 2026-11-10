@@ -14,6 +14,7 @@ export default defineConfig({
         cart: 'cart.html',
         datenschutz: 'datenschutz.html',
         impressum: 'impressum.html',
+      
       },
     },
   },

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         if (imageDisplay) {
-            imageDisplay.src = `src/assets/paintings/${latestItem.name}.jpg`;
+            imageDisplay.src = `/assets/paintings/${latestItem.name}.jpg`;
         }
         
        savedItems.forEach(item => {
