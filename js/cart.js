@@ -60,5 +60,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }).render("#paypal-button-container")
     }
-localStorage.clear('art_checkout')
+
 }); 
